@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 import { useLanguage } from '../contexts/LanguageContext';
-import { LogOut, Save, Plus, Trash2, Edit } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
+import { LogOut, Save, Plus, Trash2, Moon, Sun } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
