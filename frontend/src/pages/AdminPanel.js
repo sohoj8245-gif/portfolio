@@ -12,6 +12,7 @@ const API = `${BACKEND_URL}/api`;
 const AdminPanel = () => {
   const { logout } = useAuth();
   const { t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const [activeTab, setActiveTab] = useState('hero');
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
